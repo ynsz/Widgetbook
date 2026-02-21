@@ -1,0 +1,23 @@
+import 'package:flutter/material.dart';
+import 'package:widgetbook_annotation/widgetbook_annotation.dart' as widgetbook;
+
+@widgetbook.UseCase(name: 'Scaffold', type: ImageSample)
+ImageSample scaffoldSample(BuildContext context) {
+  return const ImageSample();
+}
+
+class ImageSample extends StatelessWidget {
+  const ImageSample({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Image.asset(
+        'assets/shiba.jpg',
+        width: 50,
+        height: 100,
+        fit: BoxFit.fill,
+      ),
+    );
+  }
+}
