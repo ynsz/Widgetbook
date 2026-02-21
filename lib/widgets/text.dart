@@ -1,0 +1,34 @@
+import 'package:flutter/material.dart';
+import 'package:widgetbook_annotation/widgetbook_annotation.dart' as widgetbook;
+
+@widgetbook.UseCase(name: 'Scaffold', type: TextSample)
+TextSample scaffoldSample(BuildContext context) {
+  return const TextSample();
+}
+
+class TextSample extends StatelessWidget {
+  const TextSample({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Container(
+        color: Colors.blue,
+        width: 500,
+        child: Text(
+          'Text Sample',
+          style: TextStyle(
+            fontSize: 30,
+            color: Colors.green,
+            fontWeight: FontWeight.bold,
+            decoration: TextDecoration.underline,
+            fontStyle: FontStyle.italic,
+            backgroundColor: Colors.red
+          ),
+          overflow: TextOverflow.ellipsis,
+          textAlign: TextAlign.center,
+        ),
+      ),
+    );
+  }
+}
