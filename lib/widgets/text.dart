@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:widgetbook_annotation/widgetbook_annotation.dart' as widgetbook;
 
-@widgetbook.UseCase(name: 'Scaffold', type: TextSample)
-TextSample scaffoldSample(BuildContext context) {
+@widgetbook.UseCase(name: 'Text', type: TextSample)
+TextSample textSample(BuildContext context) {
   return const TextSample();
 }
 

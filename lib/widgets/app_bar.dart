@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:widgetbook_annotation/widgetbook_annotation.dart' as widgetbook;
 
-@widgetbook.UseCase(name: 'Scaffold', type: AppBarSample)
-AppBarSample scaffoldSample(BuildContext context) {
+@widgetbook.UseCase(name: 'AppBar', type: AppBarSample)
+AppBarSample appBarSample(BuildContext context) {
   return const AppBarSample();
 }
 
