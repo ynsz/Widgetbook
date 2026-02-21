@@ -12,6 +12,8 @@
 // ignore_for_file: no_leading_underscores_for_library_prefixes
 import 'package:widget_book/widgets/app_bar.dart'
     as _widget_book_widgets_app_bar;
+import 'package:widget_book/widgets/container.dart'
+    as _widget_book_widgets_container;
 import 'package:widget_book/widgets/drawer.dart' as _widget_book_widgets_drawer;
 import 'package:widget_book/widgets/icon.dart' as _widget_book_widgets_icon;
 import 'package:widget_book/widgets/image.dart' as _widget_book_widgets_image;
@@ -32,6 +34,15 @@ final directories = <_widgetbook.WidgetbookNode>[
           _widgetbook.WidgetbookUseCase(
             name: 'AppBar',
             builder: _widget_book_widgets_app_bar.appBarSample,
+          ),
+        ],
+      ),
+      _widgetbook.WidgetbookComponent(
+        name: 'ContainerSample',
+        useCases: [
+          _widgetbook.WidgetbookUseCase(
+            name: 'Container',
+            builder: _widget_book_widgets_container.containerSample,
           ),
         ],
       ),
