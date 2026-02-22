@@ -23,6 +23,7 @@ import 'package:widget_book/widgets/padding.dart'
     as _widget_book_widgets_padding;
 import 'package:widget_book/widgets/rich_text.dart'
     as _widget_book_widgets_rich_text;
+import 'package:widget_book/widgets/row.dart' as _widget_book_widgets_row;
 import 'package:widget_book/widgets/scaffold.dart'
     as _widget_book_widgets_scaffold;
 import 'package:widget_book/widgets/sized_box.dart'
@@ -112,6 +113,15 @@ final directories = <_widgetbook.WidgetbookNode>[
           _widgetbook.WidgetbookUseCase(
             name: 'RichText',
             builder: _widget_book_widgets_rich_text.richTextSample,
+          ),
+        ],
+      ),
+      _widgetbook.WidgetbookComponent(
+        name: 'RowSample',
+        useCases: [
+          _widgetbook.WidgetbookUseCase(
+            name: 'Row',
+            builder: _widget_book_widgets_row.rowSample,
           ),
         ],
       ),
