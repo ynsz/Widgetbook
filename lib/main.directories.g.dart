@@ -13,6 +13,7 @@
 import 'package:widget_book/widgets/app_bar.dart'
     as _widget_book_widgets_app_bar;
 import 'package:widget_book/widgets/center.dart' as _widget_book_widgets_center;
+import 'package:widget_book/widgets/column.dart' as _widget_book_widgets_column;
 import 'package:widget_book/widgets/container.dart'
     as _widget_book_widgets_container;
 import 'package:widget_book/widgets/drawer.dart' as _widget_book_widgets_drawer;
@@ -48,6 +49,15 @@ final directories = <_widgetbook.WidgetbookNode>[
           _widgetbook.WidgetbookUseCase(
             name: 'Center',
             builder: _widget_book_widgets_center.centerSample,
+          ),
+        ],
+      ),
+      _widgetbook.WidgetbookComponent(
+        name: 'ColumnSample',
+        useCases: [
+          _widgetbook.WidgetbookUseCase(
+            name: 'Column',
+            builder: _widget_book_widgets_column.columnSample,
           ),
         ],
       ),
