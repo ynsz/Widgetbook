@@ -17,6 +17,8 @@ import 'package:widget_book/widgets/container.dart'
 import 'package:widget_book/widgets/drawer.dart' as _widget_book_widgets_drawer;
 import 'package:widget_book/widgets/icon.dart' as _widget_book_widgets_icon;
 import 'package:widget_book/widgets/image.dart' as _widget_book_widgets_image;
+import 'package:widget_book/widgets/padding.dart'
+    as _widget_book_widgets_padding;
 import 'package:widget_book/widgets/rich_text.dart'
     as _widget_book_widgets_rich_text;
 import 'package:widget_book/widgets/scaffold.dart'
@@ -72,6 +74,15 @@ final directories = <_widgetbook.WidgetbookNode>[
           _widgetbook.WidgetbookUseCase(
             name: 'Image',
             builder: _widget_book_widgets_image.imageSample,
+          ),
+        ],
+      ),
+      _widgetbook.WidgetbookComponent(
+        name: 'PaddingSample',
+        useCases: [
+          _widgetbook.WidgetbookUseCase(
+            name: 'Padding',
+            builder: _widget_book_widgets_padding.paddingSample,
           ),
         ],
       ),
