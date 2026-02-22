@@ -21,6 +21,8 @@ import 'package:widget_book/widgets/rich_text.dart'
     as _widget_book_widgets_rich_text;
 import 'package:widget_book/widgets/scaffold.dart'
     as _widget_book_widgets_scaffold;
+import 'package:widget_book/widgets/sized_box.dart'
+    as _widget_book_widgets_sized_box;
 import 'package:widget_book/widgets/text.dart' as _widget_book_widgets_text;
 import 'package:widgetbook/widgetbook.dart' as _widgetbook;
 
@@ -88,6 +90,15 @@ final directories = <_widgetbook.WidgetbookNode>[
           _widgetbook.WidgetbookUseCase(
             name: 'Scaffold',
             builder: _widget_book_widgets_scaffold.scaffoldSample,
+          ),
+        ],
+      ),
+      _widgetbook.WidgetbookComponent(
+        name: 'SizedBoxSample',
+        useCases: [
+          _widgetbook.WidgetbookUseCase(
+            name: 'SizedBox',
+            builder: _widget_book_widgets_sized_box.sizedBoxSample,
           ),
         ],
       ),
