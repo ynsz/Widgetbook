@@ -12,7 +12,25 @@ class StackSample extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Stack(),
+      body: Stack(
+        alignment: Alignment.center,
+        children: [
+          Container(
+            width: 300,
+            height: 500,
+            color: Colors.red,
+            alignment: Alignment.center,
+            child: Text('下に表示'),
+          ),
+          Container(
+            width: 70,
+            height: 120,
+            color: Colors.blue,
+            alignment: Alignment.center,
+            child: Text('上に表示'),
+          ),
+        ],
+      ),
     );
   }
 }
