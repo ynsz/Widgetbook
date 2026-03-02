@@ -16,6 +16,8 @@ import 'package:widget_book/widgets/center.dart' as _widget_book_widgets_center;
 import 'package:widget_book/widgets/column.dart' as _widget_book_widgets_column;
 import 'package:widget_book/widgets/container.dart'
     as _widget_book_widgets_container;
+import 'package:widget_book/widgets/divider.dart'
+    as _widget_book_widgets_divider;
 import 'package:widget_book/widgets/drawer.dart' as _widget_book_widgets_drawer;
 import 'package:widget_book/widgets/icon.dart' as _widget_book_widgets_icon;
 import 'package:widget_book/widgets/image.dart' as _widget_book_widgets_image;
@@ -69,6 +71,15 @@ final directories = <_widgetbook.WidgetbookNode>[
           _widgetbook.WidgetbookUseCase(
             name: 'Container',
             builder: _widget_book_widgets_container.containerSample,
+          ),
+        ],
+      ),
+      _widgetbook.WidgetbookComponent(
+        name: 'DividerSample',
+        useCases: [
+          _widgetbook.WidgetbookUseCase(
+            name: 'Divider',
+            builder: _widget_book_widgets_divider.dividerSample,
           ),
         ],
       ),
