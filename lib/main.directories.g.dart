@@ -26,6 +26,8 @@ import 'package:widget_book/widgets/divider.dart'
 import 'package:widget_book/widgets/drawer.dart' as _widget_book_widgets_drawer;
 import 'package:widget_book/widgets/expanded.dart'
     as _widget_book_widgets_expanded;
+import 'package:widget_book/widgets/fitted_box.dart'
+    as _widget_book_widgets_fitted_box;
 import 'package:widget_book/widgets/flexible.dart'
     as _widget_book_widgets_flexible;
 import 'package:widget_book/widgets/icon.dart' as _widget_book_widgets_icon;
@@ -137,6 +139,15 @@ final directories = <_widgetbook.WidgetbookNode>[
           _widgetbook.WidgetbookUseCase(
             name: 'Expanded',
             builder: _widget_book_widgets_expanded.expandedSample,
+          ),
+        ],
+      ),
+      _widgetbook.WidgetbookComponent(
+        name: 'FittedBoxSample',
+        useCases: [
+          _widgetbook.WidgetbookUseCase(
+            name: 'FittedBox',
+            builder: _widget_book_widgets_fitted_box.fittedBoxSample,
           ),
         ],
       ),
