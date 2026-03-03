@@ -34,6 +34,8 @@ import 'package:widget_book/widgets/icon.dart' as _widget_book_widgets_icon;
 import 'package:widget_book/widgets/image.dart' as _widget_book_widgets_image;
 import 'package:widget_book/widgets/list_tile.dart'
     as _widget_book_widgets_list_tile;
+import 'package:widget_book/widgets/list_view.dart'
+    as _widget_book_widgets_list_view;
 import 'package:widget_book/widgets/padding.dart'
     as _widget_book_widgets_padding;
 import 'package:widget_book/widgets/positioned.dart'
@@ -188,6 +190,15 @@ final directories = <_widgetbook.WidgetbookNode>[
           _widgetbook.WidgetbookUseCase(
             name: 'ListTile',
             builder: _widget_book_widgets_list_tile.listTileSample,
+          ),
+        ],
+      ),
+      _widgetbook.WidgetbookComponent(
+        name: 'ListViewSample',
+        useCases: [
+          _widgetbook.WidgetbookUseCase(
+            name: 'ListView',
+            builder: _widget_book_widgets_list_view.listViewSample,
           ),
         ],
       ),
