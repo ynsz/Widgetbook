@@ -45,6 +45,7 @@ import 'package:widget_book/widgets/sized_box.dart'
     as _widget_book_widgets_sized_box;
 import 'package:widget_book/widgets/spacer.dart' as _widget_book_widgets_spacer;
 import 'package:widget_book/widgets/stack.dart' as _widget_book_widgets_stack;
+import 'package:widget_book/widgets/table.dart' as _widget_book_widgets_table;
 import 'package:widget_book/widgets/text.dart' as _widget_book_widgets_text;
 import 'package:widgetbook/widgetbook.dart' as _widgetbook;
 
@@ -247,6 +248,15 @@ final directories = <_widgetbook.WidgetbookNode>[
           _widgetbook.WidgetbookUseCase(
             name: 'Stack',
             builder: _widget_book_widgets_stack.stackSample,
+          ),
+        ],
+      ),
+      _widgetbook.WidgetbookComponent(
+        name: 'TableSample',
+        useCases: [
+          _widgetbook.WidgetbookUseCase(
+            name: 'Table',
+            builder: _widget_book_widgets_table.tableSample,
           ),
         ],
       ),
