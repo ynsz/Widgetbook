@@ -16,6 +16,8 @@ import 'package:widget_book/widgets/app_bar.dart'
 import 'package:widget_book/widgets/aspect_ratio.dart'
     as _widget_book_widgets_aspect_ratio;
 import 'package:widget_book/widgets/center.dart' as _widget_book_widgets_center;
+import 'package:widget_book/widgets/clip_r_rect.dart'
+    as _widget_book_widgets_clip_r_rect;
 import 'package:widget_book/widgets/column.dart' as _widget_book_widgets_column;
 import 'package:widget_book/widgets/container.dart'
     as _widget_book_widgets_container;
@@ -77,6 +79,15 @@ final directories = <_widgetbook.WidgetbookNode>[
           _widgetbook.WidgetbookUseCase(
             name: 'Center',
             builder: _widget_book_widgets_center.centerSample,
+          ),
+        ],
+      ),
+      _widgetbook.WidgetbookComponent(
+        name: 'ClipRRectSample',
+        useCases: [
+          _widgetbook.WidgetbookUseCase(
+            name: 'ClipRRect',
+            builder: _widget_book_widgets_clip_r_rect.clipRRectSample,
           ),
         ],
       ),
