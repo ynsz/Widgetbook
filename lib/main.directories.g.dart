@@ -32,6 +32,8 @@ import 'package:widget_book/widgets/flexible.dart'
     as _widget_book_widgets_flexible;
 import 'package:widget_book/widgets/icon.dart' as _widget_book_widgets_icon;
 import 'package:widget_book/widgets/image.dart' as _widget_book_widgets_image;
+import 'package:widget_book/widgets/list_tile.dart'
+    as _widget_book_widgets_list_tile;
 import 'package:widget_book/widgets/padding.dart'
     as _widget_book_widgets_padding;
 import 'package:widget_book/widgets/positioned.dart'
@@ -177,6 +179,15 @@ final directories = <_widgetbook.WidgetbookNode>[
           _widgetbook.WidgetbookUseCase(
             name: 'Image',
             builder: _widget_book_widgets_image.imageSample,
+          ),
+        ],
+      ),
+      _widgetbook.WidgetbookComponent(
+        name: 'ListTileSample',
+        useCases: [
+          _widgetbook.WidgetbookUseCase(
+            name: 'ListTile',
+            builder: _widget_book_widgets_list_tile.listTileSample,
           ),
         ],
       ),
