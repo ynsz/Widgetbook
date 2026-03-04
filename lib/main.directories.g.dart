@@ -40,6 +40,8 @@ import 'package:widget_book/widgets/list_view.dart'
     as _widget_book_widgets_list_view;
 import 'package:widget_book/widgets/padding.dart'
     as _widget_book_widgets_padding;
+import 'package:widget_book/widgets/page_view.dart'
+    as _widget_book_widgets_page_view;
 import 'package:widget_book/widgets/positioned.dart'
     as _widget_book_widgets_positioned;
 import 'package:widget_book/widgets/rich_text.dart'
@@ -223,6 +225,15 @@ final directories = <_widgetbook.WidgetbookNode>[
           _widgetbook.WidgetbookUseCase(
             name: 'Padding',
             builder: _widget_book_widgets_padding.paddingSample,
+          ),
+        ],
+      ),
+      _widgetbook.WidgetbookComponent(
+        name: 'PageViewSample',
+        useCases: [
+          _widgetbook.WidgetbookUseCase(
+            name: 'PageView',
+            builder: _widget_book_widgets_page_view.pageViewSample,
           ),
         ],
       ),
