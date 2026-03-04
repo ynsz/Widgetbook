@@ -57,6 +57,8 @@ import 'package:widget_book/widgets/sized_box.dart'
     as _widget_book_widgets_sized_box;
 import 'package:widget_book/widgets/spacer.dart' as _widget_book_widgets_spacer;
 import 'package:widget_book/widgets/stack.dart' as _widget_book_widgets_stack;
+import 'package:widget_book/widgets/tab_bar_view.dart'
+    as _widget_book_widgets_tab_bar_view;
 import 'package:widget_book/widgets/table.dart' as _widget_book_widgets_table;
 import 'package:widget_book/widgets/text.dart' as _widget_book_widgets_text;
 import 'package:widget_book/widgets/wrap.dart' as _widget_book_widgets_wrap;
@@ -316,6 +318,15 @@ final directories = <_widgetbook.WidgetbookNode>[
           _widgetbook.WidgetbookUseCase(
             name: 'Stack',
             builder: _widget_book_widgets_stack.stackSample,
+          ),
+        ],
+      ),
+      _widgetbook.WidgetbookComponent(
+        name: 'TabBarViewSample',
+        useCases: [
+          _widgetbook.WidgetbookUseCase(
+            name: 'TabBarView',
+            builder: _widget_book_widgets_tab_bar_view.tabBarViewSample,
           ),
         ],
       ),
