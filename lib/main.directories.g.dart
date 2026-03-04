@@ -45,6 +45,8 @@ import 'package:widget_book/widgets/rich_text.dart'
 import 'package:widget_book/widgets/row.dart' as _widget_book_widgets_row;
 import 'package:widget_book/widgets/scaffold.dart'
     as _widget_book_widgets_scaffold;
+import 'package:widget_book/widgets/scrollbar.dart'
+    as _widget_book_widgets_scrollbar;
 import 'package:widget_book/widgets/single_child_scroll_view.dart'
     as _widget_book_widgets_single_child_scroll_view;
 import 'package:widget_book/widgets/sized_box.dart'
@@ -246,6 +248,15 @@ final directories = <_widgetbook.WidgetbookNode>[
           _widgetbook.WidgetbookUseCase(
             name: 'Scaffold',
             builder: _widget_book_widgets_scaffold.scaffoldSample,
+          ),
+        ],
+      ),
+      _widgetbook.WidgetbookComponent(
+        name: 'ScrollbarSample',
+        useCases: [
+          _widgetbook.WidgetbookUseCase(
+            name: 'Scrollbar',
+            builder: _widget_book_widgets_scrollbar.scrollbarSample,
           ),
         ],
       ),
