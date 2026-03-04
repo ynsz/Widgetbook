@@ -30,6 +30,8 @@ import 'package:widget_book/widgets/fitted_box.dart'
     as _widget_book_widgets_fitted_box;
 import 'package:widget_book/widgets/flexible.dart'
     as _widget_book_widgets_flexible;
+import 'package:widget_book/widgets/grid_view.dart'
+    as _widget_book_widgets_grid_view;
 import 'package:widget_book/widgets/icon.dart' as _widget_book_widgets_icon;
 import 'package:widget_book/widgets/image.dart' as _widget_book_widgets_image;
 import 'package:widget_book/widgets/list_tile.dart'
@@ -167,6 +169,15 @@ final directories = <_widgetbook.WidgetbookNode>[
           _widgetbook.WidgetbookUseCase(
             name: 'Flexible',
             builder: _widget_book_widgets_flexible.flexibleSample,
+          ),
+        ],
+      ),
+      _widgetbook.WidgetbookComponent(
+        name: 'GridViewSample',
+        useCases: [
+          _widgetbook.WidgetbookUseCase(
+            name: 'GridView',
+            builder: _widget_book_widgets_grid_view.gridViewSample,
           ),
         ],
       ),
