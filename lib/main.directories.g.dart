@@ -46,6 +46,8 @@ import 'package:widget_book/widgets/page_view.dart'
     as _widget_book_widgets_page_view;
 import 'package:widget_book/widgets/positioned.dart'
     as _widget_book_widgets_positioned;
+import 'package:widget_book/widgets/refresh_indicator.dart'
+    as _widget_book_widgets_refresh_indicator;
 import 'package:widget_book/widgets/rich_text.dart'
     as _widget_book_widgets_rich_text;
 import 'package:widget_book/widgets/row.dart' as _widget_book_widgets_row;
@@ -256,6 +258,16 @@ final directories = <_widgetbook.WidgetbookNode>[
           _widgetbook.WidgetbookUseCase(
             name: 'Positioned',
             builder: _widget_book_widgets_positioned.positionedSample,
+          ),
+        ],
+      ),
+      _widgetbook.WidgetbookComponent(
+        name: 'RefreshIndicatorSample',
+        useCases: [
+          _widgetbook.WidgetbookUseCase(
+            name: 'RefreshIndicator',
+            builder:
+                _widget_book_widgets_refresh_indicator.refreshIndicatorSample,
           ),
         ],
       ),
