@@ -46,6 +46,8 @@ import 'package:widget_book/widgets/list_tile.dart'
     as _widget_book_widgets_list_tile;
 import 'package:widget_book/widgets/list_view.dart'
     as _widget_book_widgets_list_view;
+import 'package:widget_book/widgets/outlined_button.dart'
+    as _widget_book_widgets_outlined_button;
 import 'package:widget_book/widgets/padding.dart'
     as _widget_book_widgets_padding;
 import 'package:widget_book/widgets/page_view.dart'
@@ -269,6 +271,15 @@ final directories = <_widgetbook.WidgetbookNode>[
           _widgetbook.WidgetbookUseCase(
             name: 'ListView',
             builder: _widget_book_widgets_list_view.listViewSample,
+          ),
+        ],
+      ),
+      _widgetbook.WidgetbookComponent(
+        name: 'OutlinedButtonSample',
+        useCases: [
+          _widgetbook.WidgetbookUseCase(
+            name: 'OutlinedButton',
+            builder: _widget_book_widgets_outlined_button.outlinedButtonSample,
           ),
         ],
       ),
