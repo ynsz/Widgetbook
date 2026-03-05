@@ -71,6 +71,8 @@ import 'package:widget_book/widgets/tab_bar_view.dart'
     as _widget_book_widgets_tab_bar_view;
 import 'package:widget_book/widgets/table.dart' as _widget_book_widgets_table;
 import 'package:widget_book/widgets/text.dart' as _widget_book_widgets_text;
+import 'package:widget_book/widgets/text_button.dart'
+    as _widget_book_widgets_text_button;
 import 'package:widget_book/widgets/text_field.dart'
     as _widget_book_widgets_text_field;
 import 'package:widget_book/widgets/wrap.dart' as _widget_book_widgets_wrap;
@@ -395,6 +397,15 @@ final directories = <_widgetbook.WidgetbookNode>[
           _widgetbook.WidgetbookUseCase(
             name: 'Table',
             builder: _widget_book_widgets_table.tableSample,
+          ),
+        ],
+      ),
+      _widgetbook.WidgetbookComponent(
+        name: 'TextButtonSample',
+        useCases: [
+          _widgetbook.WidgetbookUseCase(
+            name: 'TextButton',
+            builder: _widget_book_widgets_text_button.textButtonSample,
           ),
         ],
       ),
