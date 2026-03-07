@@ -77,6 +77,7 @@ import 'package:widget_book/widgets/single_child_scroll_view.dart'
     as _widget_book_widgets_single_child_scroll_view;
 import 'package:widget_book/widgets/sized_box.dart'
     as _widget_book_widgets_sized_box;
+import 'package:widget_book/widgets/slider.dart' as _widget_book_widgets_slider;
 import 'package:widget_book/widgets/spacer.dart' as _widget_book_widgets_spacer;
 import 'package:widget_book/widgets/stack.dart' as _widget_book_widgets_stack;
 import 'package:widget_book/widgets/tab_bar_view.dart'
@@ -430,6 +431,15 @@ final directories = <_widgetbook.WidgetbookNode>[
           _widgetbook.WidgetbookUseCase(
             name: 'SizedBox',
             builder: _widget_book_widgets_sized_box.sizedBoxSample,
+          ),
+        ],
+      ),
+      _widgetbook.WidgetbookComponent(
+        name: 'SliderSample',
+        useCases: [
+          _widgetbook.WidgetbookUseCase(
+            name: 'Slider',
+            builder: _widget_book_widgets_slider.sliderSample,
           ),
         ],
       ),
