@@ -20,6 +20,8 @@ import 'package:widget_book/widgets/back_button.dart'
 import 'package:widget_book/widgets/bottom_navigation_bar.dart'
     as _widget_book_widgets_bottom_navigation_bar;
 import 'package:widget_book/widgets/center.dart' as _widget_book_widgets_center;
+import 'package:widget_book/widgets/checkbox.dart'
+    as _widget_book_widgets_checkbox;
 import 'package:widget_book/widgets/clip_r_rect.dart'
     as _widget_book_widgets_clip_r_rect;
 import 'package:widget_book/widgets/column.dart' as _widget_book_widgets_column;
@@ -147,6 +149,15 @@ final directories = <_widgetbook.WidgetbookNode>[
           _widgetbook.WidgetbookUseCase(
             name: 'Center',
             builder: _widget_book_widgets_center.centerSample,
+          ),
+        ],
+      ),
+      _widgetbook.WidgetbookComponent(
+        name: 'CheckboxSample',
+        useCases: [
+          _widgetbook.WidgetbookUseCase(
+            name: 'Checkbox',
+            builder: _widget_book_widgets_checkbox.checkboxSample,
           ),
         ],
       ),
