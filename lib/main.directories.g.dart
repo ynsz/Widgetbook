@@ -66,6 +66,7 @@ import 'package:widget_book/widgets/popup_menu_button.dart'
     as _widget_book_widgets_popup_menu_button;
 import 'package:widget_book/widgets/positioned.dart'
     as _widget_book_widgets_positioned;
+import 'package:widget_book/widgets/radio.dart' as _widget_book_widgets_radio;
 import 'package:widget_book/widgets/refresh_indicator.dart'
     as _widget_book_widgets_refresh_indicator;
 import 'package:widget_book/widgets/rich_text.dart'
@@ -377,6 +378,15 @@ final directories = <_widgetbook.WidgetbookNode>[
           _widgetbook.WidgetbookUseCase(
             name: 'Positioned',
             builder: _widget_book_widgets_positioned.positionedSample,
+          ),
+        ],
+      ),
+      _widgetbook.WidgetbookComponent(
+        name: 'RadioSample',
+        useCases: [
+          _widgetbook.WidgetbookUseCase(
+            name: 'Radio',
+            builder: _widget_book_widgets_radio.radioSample,
           ),
         ],
       ),
