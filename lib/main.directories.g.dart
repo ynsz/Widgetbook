@@ -29,6 +29,8 @@ import 'package:widget_book/widgets/container.dart'
     as _widget_book_widgets_container;
 import 'package:widget_book/widgets/divider.dart'
     as _widget_book_widgets_divider;
+import 'package:widget_book/widgets/draggable.dart'
+    as _widget_book_widgets_draggable;
 import 'package:widget_book/widgets/drawer.dart' as _widget_book_widgets_drawer;
 import 'package:widget_book/widgets/dropdown_button.dart'
     as _widget_book_widgets_dropdown_button;
@@ -196,6 +198,15 @@ final directories = <_widgetbook.WidgetbookNode>[
           _widgetbook.WidgetbookUseCase(
             name: 'Divider',
             builder: _widget_book_widgets_divider.dividerSample,
+          ),
+        ],
+      ),
+      _widgetbook.WidgetbookComponent(
+        name: 'DraggableSample',
+        useCases: [
+          _widgetbook.WidgetbookUseCase(
+            name: 'Draggable',
+            builder: _widget_book_widgets_draggable.draggableSample,
           ),
         ],
       ),
