@@ -15,6 +15,8 @@ import 'package:widget_book/widgets/app_bar.dart'
     as _widget_book_widgets_app_bar;
 import 'package:widget_book/widgets/aspect_ratio.dart'
     as _widget_book_widgets_aspect_ratio;
+import 'package:widget_book/widgets/back_button.dart'
+    as _widget_book_widgets_back_button;
 import 'package:widget_book/widgets/bottom_navigation_bar.dart'
     as _widget_book_widgets_bottom_navigation_bar;
 import 'package:widget_book/widgets/center.dart' as _widget_book_widgets_center;
@@ -116,6 +118,15 @@ final directories = <_widgetbook.WidgetbookNode>[
           _widgetbook.WidgetbookUseCase(
             name: 'AspectRatio',
             builder: _widget_book_widgets_aspect_ratio.aspectRatioSample,
+          ),
+        ],
+      ),
+      _widgetbook.WidgetbookComponent(
+        name: 'BackButtonSample',
+        useCases: [
+          _widgetbook.WidgetbookUseCase(
+            name: 'BackButton',
+            builder: _widget_book_widgets_back_button.backButtonSample,
           ),
         ],
       ),
