@@ -96,6 +96,8 @@ import 'package:widget_book/widgets/text_button.dart'
     as _widget_book_widgets_text_button;
 import 'package:widget_book/widgets/text_field.dart'
     as _widget_book_widgets_text_field;
+import 'package:widget_book/widgets/visibility.dart'
+    as _widget_book_widgets_visibility;
 import 'package:widget_book/widgets/wrap.dart' as _widget_book_widgets_wrap;
 import 'package:widgetbook/widgetbook.dart' as _widgetbook;
 
@@ -556,6 +558,15 @@ final directories = <_widgetbook.WidgetbookNode>[
           _widgetbook.WidgetbookUseCase(
             name: 'Text',
             builder: _widget_book_widgets_text.textSample,
+          ),
+        ],
+      ),
+      _widgetbook.WidgetbookComponent(
+        name: 'VisibilitySample',
+        useCases: [
+          _widgetbook.WidgetbookUseCase(
+            name: 'Visibility',
+            builder: _widget_book_widgets_visibility.visibilitySample,
           ),
         ],
       ),
