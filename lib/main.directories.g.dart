@@ -91,6 +91,8 @@ import 'package:widget_book/widgets/sized_box.dart'
 import 'package:widget_book/widgets/slider.dart' as _widget_book_widgets_slider;
 import 'package:widget_book/widgets/spacer.dart' as _widget_book_widgets_spacer;
 import 'package:widget_book/widgets/stack.dart' as _widget_book_widgets_stack;
+import 'package:widget_book/widgets/stream_builder.dart'
+    as _widget_book_widgets_stream_builder;
 import 'package:widget_book/widgets/switch.dart' as _widget_book_widgets_switch;
 import 'package:widget_book/widgets/tab_bar_view.dart'
     as _widget_book_widgets_tab_bar_view;
@@ -527,6 +529,15 @@ final directories = <_widgetbook.WidgetbookNode>[
           _widgetbook.WidgetbookUseCase(
             name: 'Stack',
             builder: _widget_book_widgets_stack.stackSample,
+          ),
+        ],
+      ),
+      _widgetbook.WidgetbookComponent(
+        name: 'StreamBuilderSample',
+        useCases: [
+          _widgetbook.WidgetbookUseCase(
+            name: 'StreamBuilder',
+            builder: _widget_book_widgets_stream_builder.ftreamBuilderSample,
           ),
         ],
       ),
