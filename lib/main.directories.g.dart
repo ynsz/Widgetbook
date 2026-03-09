@@ -46,6 +46,8 @@ import 'package:widget_book/widgets/flexible.dart'
     as _widget_book_widgets_flexible;
 import 'package:widget_book/widgets/floating_action_button.dart'
     as _widget_book_widgets_floating_action_button;
+import 'package:widget_book/widgets/future_builder.dart'
+    as _widget_book_widgets_future_builder;
 import 'package:widget_book/widgets/gesture_detector.dart'
     as _widget_book_widgets_gesture_detector;
 import 'package:widget_book/widgets/grid_view.dart'
@@ -286,6 +288,15 @@ final directories = <_widgetbook.WidgetbookNode>[
             name: 'FloatingActionButton',
             builder: _widget_book_widgets_floating_action_button
                 .floatingActionButtonSample,
+          ),
+        ],
+      ),
+      _widgetbook.WidgetbookComponent(
+        name: 'FutureBuilderSample',
+        useCases: [
+          _widgetbook.WidgetbookUseCase(
+            name: 'FutureBuilder',
+            builder: _widget_book_widgets_future_builder.futureBuilderSample,
           ),
         ],
       ),
