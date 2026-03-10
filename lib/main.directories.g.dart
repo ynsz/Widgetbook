@@ -13,6 +13,8 @@
 import 'package:widget_book/widgets/align.dart' as _widget_book_widgets_align;
 import 'package:widget_book/widgets/animated_opacity.dart'
     as _widget_book_widgets_animated_opacity;
+import 'package:widget_book/widgets/animated_rotation.dart'
+    as _widget_book_widgets_animated_rotation;
 import 'package:widget_book/widgets/animated_switcher.dart'
     as _widget_book_widgets_animated_switcher;
 import 'package:widget_book/widgets/app_bar.dart'
@@ -132,6 +134,16 @@ final directories = <_widgetbook.WidgetbookNode>[
             name: 'AnimatedOpacity',
             builder:
                 _widget_book_widgets_animated_opacity.animatedOpacitySample,
+          ),
+        ],
+      ),
+      _widgetbook.WidgetbookComponent(
+        name: 'AnimatedRotationSample',
+        useCases: [
+          _widgetbook.WidgetbookUseCase(
+            name: 'AnimatedRotation',
+            builder:
+                _widget_book_widgets_animated_rotation.animatedRotationSample,
           ),
         ],
       ),
