@@ -11,6 +11,8 @@
 
 // ignore_for_file: no_leading_underscores_for_library_prefixes
 import 'package:widget_book/widgets/align.dart' as _widget_book_widgets_align;
+import 'package:widget_book/widgets/animated_switcher.dart'
+    as _widget_book_widgets_animated_switcher;
 import 'package:widget_book/widgets/app_bar.dart'
     as _widget_book_widgets_app_bar;
 import 'package:widget_book/widgets/aspect_ratio.dart'
@@ -118,6 +120,16 @@ final directories = <_widgetbook.WidgetbookNode>[
           _widgetbook.WidgetbookUseCase(
             name: 'Align',
             builder: _widget_book_widgets_align.alignSample,
+          ),
+        ],
+      ),
+      _widgetbook.WidgetbookComponent(
+        name: 'AnimatedSwitcherSample',
+        useCases: [
+          _widgetbook.WidgetbookUseCase(
+            name: 'AnimatedSwitcher',
+            builder:
+                _widget_book_widgets_animated_switcher.animatedSwitcherSample,
           ),
         ],
       ),
