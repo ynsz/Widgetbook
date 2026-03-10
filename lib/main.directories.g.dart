@@ -52,6 +52,7 @@ import 'package:widget_book/widgets/gesture_detector.dart'
     as _widget_book_widgets_gesture_detector;
 import 'package:widget_book/widgets/grid_view.dart'
     as _widget_book_widgets_grid_view;
+import 'package:widget_book/widgets/hero.dart' as _widget_book_widgets_hero;
 import 'package:widget_book/widgets/icon.dart' as _widget_book_widgets_icon;
 import 'package:widget_book/widgets/icon_button.dart'
     as _widget_book_widgets_icon_button;
@@ -318,6 +319,15 @@ final directories = <_widgetbook.WidgetbookNode>[
           _widgetbook.WidgetbookUseCase(
             name: 'GridView',
             builder: _widget_book_widgets_grid_view.gridViewSample,
+          ),
+        ],
+      ),
+      _widgetbook.WidgetbookComponent(
+        name: 'HeroSample',
+        useCases: [
+          _widgetbook.WidgetbookUseCase(
+            name: 'Hero',
+            builder: _widget_book_widgets_hero.heroSample,
           ),
         ],
       ),
